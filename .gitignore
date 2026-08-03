@@ -3,7 +3,7 @@
 
 # Pasta de vídeos ORIGINAIS (não comprimidos).
 # O site usa as versões comprimidas em images/ancore/videos/compactados/
-Ancore_site/html_template/videos/
+ancore_site/html_template/videos/
 
 # Temporários / sistema
 Thumbs.db
