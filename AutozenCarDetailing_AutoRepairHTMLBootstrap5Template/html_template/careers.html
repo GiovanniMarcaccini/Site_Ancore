@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+
+  ╔═════════════════════════════════════════════════════╗
+  ║                                                     ║
+  ║ Ancore — Proteção Veicular · v2026.3                ║
+  ║                                                     ║
+  ║ Arquitetura : HTML5 · Bootstrap 5 · JavaScript      ║
+  ║ Animações   : AOS · Slick Slider                    ║
+  ║ UI Kit      : Bootstrap Icons · Fancybox            ║
+  ║ Base        : jQuery 3 · Vanilla JS                 ║
+  ║                                                     ║
+  ║ Desenvolvido por : Giovanni Marcaccini              ║
+  ║ Front-end & Web Design                              ║
+  ║                                                     ║
+  ║ © 2024-2026 Ancore. Todos os direitos reservados.   ║
+  ║                                                     ║
+  ╚═════════════════════════════════════════════════════╝
+
+-->
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seja Associado - Ancore Proteção Veicular</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <!-- Animation On Scroll (AOS) -->
+  <link rel="stylesheet" href="css/vendor/aos.css">
+  <!-- Bootstrap Icons CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Slick CSS -->
+  <link rel="stylesheet" href="css/vendor/slick.css">
+  <!-- FANCYBOX CSS  -->
+  <link rel="stylesheet" href="css/vendor/fancybox.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header border-bottom-color">
+    <div class="border-bottom-color top-header d-none d-md-block">
+      <div class="b-container">
+        <div
+          class="d-flex justify-content-between align-items-center p-3 border-1 border-start border-end border-primary-color">
+          <ul class="p-0 m-0 d-flex gap-3 gap-lg-5">
+            <li class="list-unstyled">
+              <i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
+              (62) 3293-6047
+            </li>
+            <li class="list-unstyled">
+              <i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
+              contato@ancorepv.com.br
+            </li>
+            <li class="list-unstyled">
+              <i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
+              Seg ~ Sex: 08:00–18:00 <br> Sab - 08:00–12:00
+            </li>
+          </ul>
+          <div class="d-flex gap-2 justify-content-center justify-content-md-start">
+            <a href="https://www.facebook.com/ancoreprotecaoveicularoficial" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook icon-social"></i></a>
+            <a href="https://www.instagram.com/ancoreprotecaoveicular/" target="_blank" rel="noopener noreferrer"> <i class="bi bi-instagram icon-social"></i></a>
+            <a href="https://www.linkedin.com/in/ancoreprotecaoveicular/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin icon-social"></i></a>
+            <a href="https://www.youtube.com/@Ancoreprote%C3%A7aoveicularr" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube icon-social"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b-container">
+      <nav class="navbar navbar-expand-lg border-1 border-start border-end border-primary-color py-3 py-lg-1"
+        aria-label="Offcanvas navbar large">
+        <div class="container-fluid">
+          <div class="logo-box">
+            <a class="navbar-brand" href="index.html"><img src="images/ancore/logo-menu.svg" alt="Main Logo"
+                class="img-fluid"></a>
+          </div>
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-start bg-accent-color-2" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header" id="offcanvasNavbarLabel">
+              <div class="logo-box">
+                <a class="navbar-brand" href="index.html"><img src="images/ancore/logo-menu.svg" alt="Drawer Logo"
+                    class="img-fluid"></a>
+              </div>
+              <button type="button" class="btn-close bg-accent-color-2 p-3" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body d-flex flex-row justify-content-start justify-content-lg-end">
+                            <ul class="navbar-nav my-lg-4 gap-lg-2 gap-xl-4">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="careers.html">Seja associado</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="our-team.html">Sobre nós</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="services.html">Proteção Ancore</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="appointment.html">Carreiras</a>
+                </li>
+              </ul>
+              <div class="mt-3">
+                <a href="https://area-sistemas.hinova.com.br/sga/area/v5/login/" class="btn btn-lg btn-cta-primary d-none d-lg-block ms-4">Área do associado.</a>
+              </div>
+</div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- #header end -->
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Banner -->
+    <section class="section position-relative"
+      style="background-image: url('images/ancore/banner-sobre-nos.webp');">
+      <div class="bg-overlay-4"></div>
+      <div class="b-container h-100 position-relative z-2">
+        <div class="d-flex flex-column justify-content-center align-items-center mx-auto text-center text-white gap-4"
+          style="max-width: 895px;">
+          <h1 class="heading fw-bold" data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000">Venha ser Associado Ancore!</h1>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb" data-aos="fade-down" data-aos-delay="600" data-aos-duration="1000">
+              <li class="breadcrumb-item"><a href="index.html">Início</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Seja Associado</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </section>
+    <!-- #banner -->
+
+    <!-- Join With Us -->
+    <section class="section bg-color">
+      <div class="b-container">
+        <div class="row d-flex align-items-center">
+          <div class="col-12 col-xl-6 pe-xl-4" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
+            <img src="images/ancore/CAPA-CONTATO.webp"
+              alt="worker-cleaning-modern-vehicle-alloy-wheels" class="w-100 rounded-4 mb-5 mb-xl-0" height="650px">
+          </div>
+          <div class="col-12 col-xl-6 ps-xl-4" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
+            <div class="d-flex align-items-center">
+              <i class="bi bi-car-front-fill fs-4 me-3 text-primary-color"></i>
+              <span class="subtitle">SEJA ASSOCIADO</span>
+            </div>
+            <h2 class="my-4">Faça parte da Ancore Proteção Veicular</h2>
+            <p>Ser associado Ancore é ter proteção completa, atendimento ágil e uma rede de benefícios pensada para
+              você dirigir com total tranquilidade. Somos uma associação sem fins lucrativos que negocia as melhores
+              condições e vantagens para os seus associados.</p>
+            <h3 class="mb-4">Proteção, economia e tranquilidade para você</h3>
+            <div
+              class="col-12 col-md-6 col-xl-5 d-flex flex-column flex-md-row align-items-center w-100 gap-4">
+              <ul class="p-0 m-0 w-100">
+                <li
+                  class="list-unstyled mb-4 text-big fw-bold d-flex flex-row justify-content-center justify-content-md-start align-items-center p-4 bg-accent-color-2 rounded-4">
+                  <i class="bi bi-check-circle text-primary-color me-4 fs-1"></i>
+                  Assistência 24 horas
+                </li>
+                <li
+                  class="list-unstyled text-big fw-bold d-flex flex-row justify-content-center justify-content-md-start align-items-center p-4 bg-accent-color-2 rounded-4">
+                  <i class="bi bi-check-circle text-primary-color me-4 fs-1"></i>
+                  Cobertura em todo o Brasil
+                </li>
+              </ul>
+              <ul class="p-0 m-0 w-100">
+                <li
+                  class="list-unstyled mb-4 text-big fw-bold d-flex flex-row justify-content-center justify-content-md-start align-items-center p-4 bg-accent-color-2 rounded-4">
+                  <i class="bi bi-check-circle text-primary-color me-4 fs-1"></i>
+                  Descontos em combustível
+                </li>
+                <li
+                  class="list-unstyled text-big fw-bold d-flex flex-row justify-content-center justify-content-md-start align-items-center p-4 bg-accent-color-2 rounded-4">
+                  <i class="bi bi-check-circle text-primary-color me-4 fs-1"></i>
+                  Carro reserva quando precisar
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #join with us -->
+
+    <!-- Careers -->
+    <section class="section bg-accent-color-2 bg-color">
+      <div class="b-container">
+        <div class="row">
+          <div class="col-12 col-xl-7 pe-xl-4 d-flex flex-column gap-4 order-2 order-xl-1 mt-5 mt-xl-0" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
+            <div class="service-wrap service-box bg-secondary-color p-4 rounded-4 d-flex flex-column gap-4" style="transform: translateY(0px);">
+              <div class="d-flex flex-column flex-md-row justify-content-between">
+                <div class="d-flex flex-row flex-wrap gap-2">
+                  <a href="#" class="btn btn-cta-secondary text-small fw-normal">Emergência</a>
+                  <a href="#" class="btn btn-cta-secondary text-small fw-normal">24 horas</a>
+                </div>
+                <a href="contact-us.html" class="links-primary text-white mt-4 mt-md-0">QUERO SER ASSOCIADO<i
+                  class="bi bi-arrow-right-circle ms-3"></i></a>
+              </div>
+              <h3 class="mb-0">Assistência 24 horas</h3>
+              <p class="mb-0">Conte com guincho, socorro mecânico e apoio especializado a qualquer hora do dia ou da noite, onde você estiver.</p>
+            </div>
+            <div class="service-wrap service-box bg-secondary-color p-4 rounded-4 d-flex flex-column gap-4" style="transform: translateY(0px);">
+              <div class="d-flex flex-column flex-md-row justify-content-between">
+                <div class="d-flex flex-row flex-wrap gap-2">
+                  <a href="#" class="btn btn-cta-secondary text-small fw-normal">Cobertura</a>
+                  <a href="#" class="btn btn-cta-secondary text-small fw-normal">Nacional</a>
+                </div>
+                <a href="contact-us.html" class="links-primary text-white mt-4 mt-md-0">QUERO SER ASSOCIADO<i
+                  class="bi bi-arrow-right-circle ms-3"></i></a>
+              </div>
+              <h3 class="mb-0">Proteção em todo o Brasil</h3>
+              <p class="mb-0">Proteção contra roubo, furto, colisão, perda total e desastres naturais, com cobertura em todo o território nacional.</p>
+            </div>
+            <div class="service-wrap service-box bg-secondary-color p-4 rounded-4 d-flex flex-column gap-4" style="transform: translateY(0px);">
+              <div class="d-flex flex-column flex-md-row justify-content-between">
+                <div class="d-flex flex-row flex-wrap gap-2">
+                  <a href="#" class="btn btn-cta-secondary text-small fw-normal">Economia</a>
+                  <a href="#" class="btn btn-cta-secondary text-small fw-normal">Benefícios</a>
+                </div>
+                <a href="contact-us.html" class="links-primary text-white mt-4 mt-md-0">QUERO SER ASSOCIADO<i
+                  class="bi bi-arrow-right-circle ms-3"></i></a>
+              </div>
+              <h3 class="mb-0">Descontos e vantagens exclusivas</h3>
+              <p class="mb-0">Aproveite descontos em combustível e uma ampla rede de parceiros com condições especiais para associados.</p>
+            </div>
+            <div class="service-wrap service-box bg-secondary-color p-4 rounded-4 d-flex flex-column gap-4" style="transform: translateY(0px);">
+              <div class="d-flex flex-column flex-md-row justify-content-between">
+                <div class="d-flex flex-row flex-wrap gap-2">
+                  <a href="#" class="btn btn-cta-secondary text-small fw-normal">Mobilidade</a>
+                  <a href="#" class="btn btn-cta-secondary text-small fw-normal">Sem paradas</a>
+                </div>
+                <a href="contact-us.html" class="links-primary text-white mt-4 mt-md-0">QUERO SER ASSOCIADO<i
+                  class="bi bi-arrow-right-circle ms-3"></i></a>
+              </div>
+              <h3 class="mb-0">Carro reserva</h3>
+              <p class="mb-0">Se o seu veículo precisar ficar parado, você conta com carro reserva para manter sua rotina sem preocupações.</p>
+            </div>
+          </div>
+          <div class="col-12 col-xl-5 ps-xl-4 order-1 order-xl-2" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
+            <div class="bg-secondary-color rounded-4 p-4">
+              <h4 class="text-center">Faça sua cotação</h4>
+              <p class="text-center text-color-3 mb-4">Preencha os dados e deixe sua mensagem.</p>
+              <div
+                class="success_msg toast align-items-center w-100 shadow-none mb-3 border border-success rounded-pill my-4"
+                role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="d-flex p-2">
+                  <div class="toast-body d-flex flex-row gap-3 align-items-center text-success">
+                    <i class="bi bi-check-circle-fill text-success"></i>
+                    Mensagem enviada com sucesso
+                    .
+                  </div>
+                  <button type="button" class="me-2 m-auto bg-transparent border-0 ps-1 pe-0 text-success"
+                    data-bs-dismiss="toast" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+                </div>
+              </div>
+              <div
+                class="error_msg toast align-items-center w-100 shadow-none border-danger mb-3 my-4 border rounded-pill"
+                role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="d-flex p-2">
+                  <div class="toast-body d-flex flex-row gap-3 align-items-center text-danger">
+                    <i class="bi bi-exclamation-triangle-fill text-danger"></i>
+                    Something Wrong ! Send Form Failed.
+                  </div>
+                  <button type="button" class="me-2 m-auto bg-transparent border-0 ps-1 pe-0 text-danger"
+                    data-bs-dismiss="toast" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+                </div>
+              </div>
+              <!-- <form class="form needs-validation" novalidate>
+                <div class="row mb-2">
+                  <div class="col-12 mb-4">
+                    <label for="name" class="form-label">Primeiro nome</label>
+                    <input type="text" name="name" id="name" class="form-control form-control-lg"
+                      placeholder="Digite seu nome" aria-label="Name">
+                  </div>
+                  <div class="col-12 mb-4">
+                    <label for="whatsapp" class="form-label">Qual seu WhatsApp? <span class="text-primary-color">*</span></label>
+                    <input type="tel" name="whatsapp" id="whatsapp" class="form-control form-control-lg"
+                      placeholder="digite o número do seu WhatsApp" aria-label="WhatsApp" required>
+                  </div>
+                  <div class="col-12 mb-4">
+                    <label for="email" class="form-label">Informe seu email</label>
+                    <input type="email" name="email" id="email" class="form-control form-control-lg"
+                      placeholder="Digite seu email" aria-label="Email">
+                  </div>
+                  <div class="col-12 mb-4">
+                    <label for="placa" class="form-label">Qual a placa do Veículo <span class="text-primary-color">*</span></label>
+                    <input type="text" name="placa" id="placa" class="form-control form-control-lg"
+                      placeholder="Informe a placa do veículo" aria-label="Placa" required>
+                  </div>
+                </div>
+                <button type="submit"
+                  class="btn btn-cta-primary w-100 d-inline-flex py-3 d-flex align-items-center justify-content-center submit_form">
+                  Solicite contato com a nossa equipe
+                  <span class="btn-icon rounded-circle d-inline-flex align-items-center justify-content-center ms-2">
+                    <i class="bi bi-chevron-right text-white" style="font-size:10px"></i>
+                  </span>
+                </button>
+              </form> -->
+
+               <section id="pwrcrm"><form id="pwrcrmform"><input type="hidden" value="4ncore761" id="pwrCmpnHsh" name="pwrCmpnHsh"><input type="hidden" value="WG3AoAQ3" id="pwrFrmCode" name="pwrFrmCode"><input type="hidden" value="1" id="pwrPplnClmn" name="pwrPplnClmn"><input type="hidden" value="4391154c-a645-4165-ae0b-6a88a6aa4a73" id="pwrFnlStg" name="pwrFnlStg"><input type="hidden" value="681" id="pwrLdSrc" name="pwrLdSrc"><div class="pwrcrmInputCont"><input type="text" required="required" id="pwrClntNm" name="pwrClntNm" placeholder="Escreva seu nome" aria-label="Name"></div><div class="pwrcrmInputCont"><input type="tel" required="required" placeholder="Qual é o seu Whatsapp?" maxlength="11" class="phone_mask" id="pwrCltPhn" name="pwrCltPhn"></div><div class="pwrcrmInputCont"><input type="email" id="pwrClntMl" name="pwrClntMl" placeholder="Seu melhor E-mail" aria-label="Email"></div><div class="pwrcrmInputCont"><input type="text" required="required" placeholder="Placa do seu carro" maxlength="7" id="pwrVhclPlt" name="pwrVhclPlt"></div><button type="submit">Quero proteger meu carro.<span class="btn-icon rounded-circle d-inline-flex align-items-center justify-content-center ms-2">
+                    <i class="bi bi-chevron-right text-white" style="font-size:10px"></i>
+                  </span></button></form></section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #careers -->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="b-container">
+        <div class="row g-4 g-xl-5 mt-0 mx-auto ptpb-120">
+
+          <div class="col-12 col-md-6 col-xl-3 mt-0 px-auto px-xl-0">
+            <div class="footer-logo-box">
+              <img src="images/ancore/logo-menu.svg" alt="Footer Logo" class="h-100 object-fit-contain d-block">
+            </div>
+            <p class="mt-4 text-center text-md-start">Copyright © 2026 ANCORE - ASSOCIACAO NACIONAL DE COOPERACAO RECIPROCA - 23.345.936/0001-50. <br> Todos os direitos reservados. <br> Versão 2026.3</p>
+            <div class="d-flex gap-2 justify-content-center justify-content-md-start">
+              <a href="https://www.facebook.com/ancoreprotecaoveicularoficial" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook icon-social"></i></a>
+              <a href="https://www.instagram.com/ancoreprotecaoveicular/" target="_blank" rel="noopener noreferrer"> <i class="bi bi-instagram icon-social"></i></a>
+              <a href="https://www.linkedin.com/in/ancoreprotecaoveicular/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin icon-social"></i></a>
+              <a href="https://www.youtube.com/@Ancoreprote%C3%A7aoveicularr" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube icon-social"></i></a>
+            </div>
+
+            <p class="text-small text-color-3 mt-4 mb-2 text-center text-md-start">Baixe nosso app</p>
+            <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-md-start">
+              <a href="https://play.google.com/store/search?q=ancore&c=apps&hl=pt_BR" target="_blank" rel="noopener noreferrer" class="app-store-btn">
+                <i class="bi bi-google-play"></i>
+                <span class="app-store-btn-text">
+                  <small>Disponível no</small>
+                  <span>Google Play</span>
+                </span>
+              </a>
+              <a href="https://apps.apple.com/br/app/ancore-clube-de-vantagens/id1599569108" target="_blank" rel="noopener noreferrer" class="app-store-btn">
+                <i class="bi bi-apple"></i>
+                <span class="app-store-btn-text">
+                  <small>Baixar na</small>
+                  <span>App Store</span>
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <!-- <div class="col-12 col-md-6 col-xl-2 mt-5 mt-xl-0">
+            <h4 class="text-center text-md-start">Assistência e Benefícios</h4>
+            <hr class="border-1 max-w-170 text-primary-color opacity-100 mx-auto mx-md-0">
+            <ul class="p-0 m-0 d-flex flex-column align-items-center align-items-md-start">
+              <li class="d-flex align-items-center list-unstyled mb-2">
+                <a href="#"><i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
+                  Proteção em todo o Brasil</a>
+              </li>
+              <li class="d-flex align-items-center list-unstyled mb-2">
+                <a href="#"><i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
+                  Cobertura contra roubo e furto</a>
+              </li>
+              <li class="d-flex align-items-center list-unstyled mb-2">
+                <a href="#"><i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
+                  Colisão/perda total</a>
+              </li>
+              <li class="d-flex align-items-center list-unstyled mb-2">
+                <a href="#"><i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
+                  Desastres naturais</a>
+              </li>
+              <li class="d-flex align-items-center list-unstyled mb-2">
+                <a href="#"><i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
+                  Cobertura para terceiros</a>
+              </li>
+              <li class="d-flex align-items-center list-unstyled mb-2">
+                <a href="#"><i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
+                  Guincho para terceiros</a>
+              </li>
+            </ul>
+          </div> -->
+
+          <div class="col-12 col-md-6 col-xl-3 mt-5 mt-xl-0 pe-0">
+            <h4 class="text-center text-md-start">Menu</h4>
+            <div class="w-100">
+              <hr class="border-1 max-w-170 text-primary-color opacity-100 mx-auto mx-md-0">
+            </div>
+            <ul class="p-0 m-0 d-flex flex-column align-items-center align-items-md-start">
+              <li class="d-flex align-items-center list-unstyled mb-2">
+                <a href="#"><i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
+                  Início</a> 
+              </li>
+              <li class="d-flex align-items-center list-unstyled mb-2">
+                <a href="#"><i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
+                  Seja associado</a>
+              </li>
+              <li class="d-flex align-items-center list-unstyled mb-2">
+                <a href="#"><i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
+                  Sobre Nós</a>
+              </li>
+              <li class="d-flex align-items-center list-unstyled mb-2">
+                <a href="#"><i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
+                  Proteção Ancore</a>
+              </li>
+              <li class="d-flex align-items-center list-unstyled mb-2">
+                <a href="#"><i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
+                 Blog</a>
+              </li>
+              <li class="d-flex align-items-center list-unstyled mb-2">
+                <a href="#"><i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
+                  Carreiras</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-md-6 col-xl-4 mt-5 mt-xl-0 ps-0">
+            <h4 class="text-center text-md-start">Já é Associado</h4>
+            <hr class="border-1 max-w-170 text-primary-color opacity-100 mx-auto mx-md-0">
+            <div class="d-flex mb-4 flex-column flex-md-row align-items-center align-items-md-start">
+              <a href="#" class="icon-contact me-0 me-md-3"><i class="bi bi-telephone fs-3"></i></a>
+              <div class="d-flex flex-column text-center text-md-start">
+                <p class="text-small text-color-3 mb-1">Fale Conosco</p>
+                <h5 class="mb-0">(62) 3293-6047</h5>
+              </div>
+            </div>
+            <div class="d-flex mb-4 flex-column flex-md-row align-items-center align-items-md-start">
+              <a href="#" class="icon-contact me-0 me-md-3"><i class="bi bi-envelope fs-3"></i></a>
+              <div class="d-flex flex-column text-center text-md-start">
+                <p class="text-small text-color-3 mb-1">Assistência 24h</p>
+                <h5 class="mb-0">0800 086 2121</h5>
+              </div>
+            </div>
+            <div class="d-flex flex-column flex-md-row align-items-center align-items-md-start">
+              <a href="#" class="icon-contact me-0 me-md-3"><i class="bi bi-geo-alt fs-3"></i></i></a>
+              <div class="d-flex flex-column text-center text-md-start">
+                <p class="text-small text-color-3 mb-1">Onde nos encontrar</p>
+                <h5 class="mb-0">Av. Portugal, 591 - St. Oeste, Goiânia - GO, 74140-020</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+            <!-- Certificações Footer -->
+      <div class="b-container pb-5">
+        <div class="bg-white rounded-4 p-4 d-flex flex-wrap align-items-center justify-content-center gap-4 gap-md-5">
+          <img src="images/Logos ARX/arx_by.jpeg" alt="ARX Assistência" style="height:90px;width:auto;object-fit:contain;">
+          <img src="images/ancore/cert/iso9001.webp" alt="ISO 9001" style="height:90px;width:auto;object-fit:contain;">
+          <img src="images/ancore/cert/selo-300x233.webp" alt="Selo Ancore" style="height:90px;width:auto;object-fit:contain;">
+          <img src="images/ancore/cert/Selo-Jornada-Flexivel-2023-Preto-300x300.webp" alt="Selo Jornada Flexível 2023" style="height:90px;width:auto;object-fit:contain;">
+          <img src="images/ancore/cert/Selo-Melhores-Nacional-Pequenas-Empresas-Horizontal-2023-300x97.webp" alt="Selo Melhores Empresas 2023" style="height:60px;width:auto;object-fit:contain;">
+          <img src="images/ancore/cert/Selo-Ranking-Centro-Oeste-2024-300x300.webp" alt="Selo Ranking Centro-Oeste 2024" style="height:90px;width:auto;object-fit:contain;">
+        </div>
+      </div>
+      <div class="border-top-color">
+        <div class="b-container border-start border-end border-1 border-primary-color p-3">
+          <div class="d-flex flex-row flex-wrap justify-content-center justify-content-md-between">
+            <p class="text-color-3 m-0">Copyright © 2026 ANCORE - Prod.marcaccini</p>
+            <img src="images/Logos ARX/gio_v2.png" alt="Quem fez o site" style="height:55px;width:auto;object-fit:contain;">
+
+            <ul class="m-0 p-0 d-flex gap-3 footer-terms">
+              <li class="list-unstyled"><a href="#"
+                  class="text-color-3 border-end border-1 border-primary-color pe-3">Termos & Condições</a></li>
+              <li class="list-unstyled"><a href="#" class="text-color-3">Paint Protection</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- #footer -->
+
+  </main>
+  <!-- End Main Content -->
+
+
+  <!-- Scripts -->
+  <!-- jQuery -->
+  <script src="js/vendor/jquery.min.js"></script>
+  <!-- Animation On Scroll (AOS) -->
+  <script src="js/vendor/aos.js"></script>
+  <!-- Slick JS -->
+  <script src="js/vendor/slick.min.js"></script>
+  <!-- FANCY BOX -->
+  <script src="js/vendor/fancybox.umd.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="js/vendor/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/script-counter.js"></script>
+  <script src="js/submit-form.js"></script>
+  <script src="js/script.js"></script>
+  <!-- End Scripts -->
+</body>
+
+</html>

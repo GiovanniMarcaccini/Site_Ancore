@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c ' *)",
+      "Bash(python \"C:/Users/GIOVAN~1.MAR/AppData/Local/Temp/claude/C--Giovanni-Marcaccini-Desenvolvimento-Ancore2-0-AutozenCarDetailing-AutoRepairHTMLBootstrap5Template-html-template/726c4f49-738f-4d6b-9988-4c14e06ad283/scratchpad/propagate_nav_footer.py\")",
+      "Bash(perl -pi -e 's/Porteção Ancore/Proteção Ancore/g' *.html)",
+      "Bash(python \"C:/Users/GIOVAN~1.MAR/AppData/Local/Temp/claude/C--Giovanni-Marcaccini-Desenvolvimento-Ancore2-0-AutozenCarDetailing-AutoRepairHTMLBootstrap5Template-html-template/726c4f49-738f-4d6b-9988-4c14e06ad283/scratchpad/blog_posts.py\")",
+      "Bash(python \"C:/Users/GIOVAN~1.MAR/AppData/Local/Temp/claude/C--Giovanni-Marcaccini-Desenvolvimento-Ancore2-0-AutozenCarDetailing-AutoRepairHTMLBootstrap5Template-html-template/726c4f49-738f-4d6b-9988-4c14e06ad283/scratchpad/make_single_posts.py\")",
+      "WebFetch(domain:ancore.app)",
+      "Bash(python \"C:/Users/GIOVAN~1.MAR/AppData/Local/Temp/claude/C--Giovanni-Marcaccini-Desenvolvimento-Ancore2-0-AutozenCarDetailing-AutoRepairHTMLBootstrap5Template-html-template/cf254c87-0727-4bc9-bc9a-1c04ab0e77ba/scratchpad/gen_services.py\")",
+      "Bash(python \"C:/Users/GIOVAN~1.MAR/AppData/Local/Temp/claude/C--Giovanni-Marcaccini-Desenvolvimento-Ancore2-0-AutozenCarDetailing-AutoRepairHTMLBootstrap5Template-html-template/cf254c87-0727-4bc9-bc9a-1c04ab0e77ba/scratchpad/add_regulamentos.py\")",
+      "Bash(python \"C:/Users/GIOVAN~1.MAR/AppData/Local/Temp/claude/C--Giovanni-Marcaccini-Desenvolvimento-Ancore2-0-AutozenCarDetailing-AutoRepairHTMLBootstrap5Template-html-template/cf254c87-0727-4bc9-bc9a-1c04ab0e77ba/scratchpad/standardize.py\")",
+      "Bash(python \"C:/Users/GIOVAN~1.MAR/AppData/Local/Temp/claude/C--Giovanni-Marcaccini-Desenvolvimento-Ancore2-0-AutozenCarDetailing-AutoRepairHTMLBootstrap5Template-html-template/cf254c87-0727-4bc9-bc9a-1c04ab0e77ba/scratchpad/add_signature.py\")",
+      "Bash(python \"C:/Users/GIOVAN~1.MAR/AppData/Local/Temp/claude/C--Giovanni-Marcaccini-Desenvolvimento-Ancore2-0-AutozenCarDetailing-AutoRepairHTMLBootstrap5Template-html-template/cf254c87-0727-4bc9-bc9a-1c04ab0e77ba/scratchpad/remove_dropdown.py\")",
+      "Bash(python \"C:/Users/GIOVAN~1.MAR/AppData/Local/Temp/claude/C--Giovanni-Marcaccini-Desenvolvimento-Ancore2-0-AutozenCarDetailing-AutoRepairHTMLBootstrap5Template-html-template/cf254c87-0727-4bc9-bc9a-1c04ab0e77ba/scratchpad/add_certs_footer.py\")",
+      "Bash(python \"C:/Users/GIOVAN~1.MAR/AppData/Local/Temp/claude/C--Giovanni-Marcaccini-Desenvolvimento-Ancore2-0-AutozenCarDetailing-AutoRepairHTMLBootstrap5Template-html-template/cf254c87-0727-4bc9-bc9a-1c04ab0e77ba/scratchpad/sync_footer.py\")",
+      "Bash(python \"C:/Users/GIOVAN~1.MAR/AppData/Local/Temp/claude/C--Giovanni-Marcaccini-Desenvolvimento-Ancore2-0-AutozenCarDetailing-AutoRepairHTMLBootstrap5Template-html-template/cf254c87-0727-4bc9-bc9a-1c04ab0e77ba/scratchpad/fix_footer.py\")",
+      "Bash(python \"C:/Users/GIOVAN~1.MAR/AppData/Local/Temp/claude/C--Giovanni-Marcaccini-Desenvolvimento-Ancore2-0-AutozenCarDetailing-AutoRepairHTMLBootstrap5Template-html-template/cf254c87-0727-4bc9-bc9a-1c04ab0e77ba/scratchpad/service_quotes.py\")"
+    ]
+  }
+}
