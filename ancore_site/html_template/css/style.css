@@ -817,20 +817,6 @@ a:hover {
   max-height: 600px;
 }
 
-/* Vídeo do YouTube tocando no fundo (mudo, em loop) na seção "Sobre a Ancore".
-   min-width/height + aspect-ratio = efeito "cover": preenche a caixa e corta o excesso. */
-.banner-video-bg {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 100%;
-  min-height: 100%;
-  aspect-ratio: 16 / 9;
-  border: 0;
-  pointer-events: none;
-}
-
 /* Carousel Items */
 .kb-carousel .carousel-item {
   position: relative;
