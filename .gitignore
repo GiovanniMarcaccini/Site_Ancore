@@ -5,6 +5,9 @@
 # O site usa as versões comprimidas em images/ancore/videos/compactados/
 ancore_site/html_template/videos/
 
+# Vídeo institucional agora vem do YouTube — não versionar o arquivo local pesado
+ancore_site/html_template/images/ancore/videos/compactados/ancore_2024.mp4
+
 # Temporários / sistema
 Thumbs.db
 .DS_Store

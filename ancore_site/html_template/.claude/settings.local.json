@@ -18,7 +18,10 @@
       "Bash(python \"C:/Users/GIOVAN~1.MAR/AppData/Local/Temp/claude/C--Giovanni-Marcaccini-Desenvolvimento-Ancore2-0-AutozenCarDetailing-AutoRepairHTMLBootstrap5Template-html-template/cf254c87-0727-4bc9-bc9a-1c04ab0e77ba/scratchpad/service_quotes.py\")",
       "Bash(git commit -m '@ *)",
       "Bash(git push *)",
-      "PowerShell(Set-Location 'C:\\\\Giovanni Marcaccini\\\\Desenvolvimento\\\\Ancore2.0'; try { Rename-Item -Path 'AutozenCarDetailing_AutoRepairHTMLBootstrap5Template' -NewName 'Ancore_site' -ErrorAction Stop; Write-Output 'RENOMEADO COM SUCESSO' } catch { Write-Output \\('FALHOU: ' + $_.Exception.Message\\) })"
+      "PowerShell(Set-Location 'C:\\\\Giovanni Marcaccini\\\\Desenvolvimento\\\\Ancore2.0'; try { Rename-Item -Path 'AutozenCarDetailing_AutoRepairHTMLBootstrap5Template' -NewName 'Ancore_site' -ErrorAction Stop; Write-Output 'RENOMEADO COM SUCESSO' } catch { Write-Output \\('FALHOU: ' + $_.Exception.Message\\) })",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "WebFetch(domain:www.youtube.com)"
     ]
   }
 }
