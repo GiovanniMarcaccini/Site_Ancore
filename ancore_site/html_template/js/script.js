@@ -153,3 +153,67 @@ $(document).ready(function () {
   console.log("%cHTML5 \u00b7 Bootstrap 5 \u00b7 jQuery \u00b7 AOS \u00b7 Slick \u00b7 Fancybox", suave);
   console.log("%c\u00a9 2024-2026 Ancore. Todos os direitos reservados.", suave);
 })();
+
+/* ===== V\u00eddeo institucional: mini-player flutuante (YouTube IFrame API) ===== */
+(function () {
+  var wrap = document.getElementById('ancore-video-wrap');
+  if (!wrap) return; // s\u00f3 existe na index
+
+  // 1) Cria o player do YouTube (a API cuida da origem/referrer corretamente)
+  function initPlayer() {
+    window.ancorePlayer = new YT.Player('ancore-video-player', {
+      videoId: 'ApWoWiJtS7Y',
+      playerVars: {
+        autoplay: 1, mute: 1, loop: 1, playlist: 'ApWoWiJtS7Y',
+        rel: 0, modestbranding: 1, playsinline: 1
+      }
+    });
+  }
+  window.onYouTubeIframeAPIReady = initPlayer;
+
+  // 2) Carrega a API (ou usa a que j\u00e1 estiver carregada)
+  if (window.YT && window.YT.Player) {
+    initPlayer();
+  } else if (!document.querySelector('script[src*="iframe_api"]')) {
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    document.head.appendChild(tag);
+  }
+
+  // 3) Flutua no canto quando a se\u00e7\u00e3o sai de vista ao rolar
+  var col = wrap.parentElement;
+  var floating = false, closed = false;
+
+  function onScroll() {
+    if (closed) return;
+    if (!floating) {
+      var r = wrap.getBoundingClientRect();
+      if (r.bottom < 80) {                 // v\u00eddeo passou pra cima da tela
+        col.style.minHeight = wrap.offsetHeight + 'px'; // reserva o espa\u00e7o
+        wrap.classList.add('is-floating');
+        floating = true;
+      }
+    } else {
+      var cr = col.getBoundingClientRect();
+      if (cr.bottom > 140) {               // rolou de volta -> volta ao normal
+        wrap.classList.remove('is-floating');
+        col.style.minHeight = '';
+        floating = false;
+      }
+    }
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
+
+  // 4) Bot\u00e3o de fechar (s\u00f3 no modo flutuante)
+  var closeBtn = wrap.querySelector('.ancore-video-close');
+  if (closeBtn) {
+    closeBtn.addEventListener('click', function () {
+      closed = true;
+      wrap.classList.remove('is-floating');
+      col.style.minHeight = '';
+      wrap.style.display = 'none';
+      try { window.ancorePlayer && window.ancorePlayer.pauseVideo(); } catch (e) {}
+    });
+  }
+})();
