@@ -17,19 +17,16 @@ $(function () {
       $('.submit_subscribe').html('Sending...');
       const toast = new bootstrap.Toast($('.success_msg')[0]);
       const errtoast = new bootstrap.Toast($('.error_msg')[0]);
-      var formData = form.serialize();
-      $.ajax({
+      const hasFileInput = form.find('input[type="file"]').length > 0;
+      const ajaxOptions = {
         type: "POST",
         url: "php/form_process.php",
-        data: formData,
         success: function (response) {
           if (response === 'success') {
-            if (actionInput.length > 0) {
-              if (actionInput.val() === 'subscribe') {
-                $('.submit_subscribe').html('Subscribe');
-                const toast_comment = new bootstrap.Toast($('.success_msg_subscribe')[0]);
-                toast_comment.show();
-              }
+            if (actionInput.length > 0 && actionInput.val() === 'subscribe') {
+              $('.submit_subscribe').html('Subscribe');
+              const toast_comment = new bootstrap.Toast($('.success_msg_subscribe')[0]);
+              toast_comment.show();
             } else {
               toast.show()
               $('.submit_form').html('Send Message');
@@ -41,7 +38,17 @@ $(function () {
             $('.submit_subscribe').html('Subscribe');
           }
         }
-      });
+      };
+
+      if (hasFileInput) {
+        ajaxOptions.data = new FormData(form[0]);
+        ajaxOptions.processData = false;
+        ajaxOptions.contentType = false;
+      } else {
+        ajaxOptions.data = form.serialize();
+      }
+
+      $.ajax(ajaxOptions);
     }
 
     form.addClass('was-validated');

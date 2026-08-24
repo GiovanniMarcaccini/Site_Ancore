@@ -314,6 +314,83 @@ img {
   border: 1px solid var(--divider-color);
 }
 
+/* Cards de logos (parceiros/certificações): em vez de um carrossel com fundo
+   claro + vinheta escura sobreposta (duas curvas de border-radius que nunca
+   alinhavam perfeitamente e deixavam um filete branco na borda), cada logo
+   agora fica num "chip" claro próprio sobre o card escuro do site. Uma única
+   curva por elemento, sem camadas sobrepostas — não tem como sobrar um halo. */
+.logo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 22px 28px;
+}
+
+.logo-chip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 24px 36px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, .25);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.logo-chip:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, .35);
+}
+
+.logo-chip img {
+  display: block;
+  height: 68px;
+  width: auto;
+  max-width: 230px;
+  object-fit: contain;
+}
+
+.logo-chip-badge {
+  padding: 12px;
+  border-radius: 16px;
+}
+
+.logo-chip-badge img {
+  height: 132px;
+  max-width: 132px;
+}
+
+.logo-chip-badge-wide img {
+  height: 86px;
+  max-width: 250px;
+}
+
+@media (max-width: 767.98px) {
+  .logo-grid {
+    gap: 16px 18px;
+  }
+
+  .logo-chip {
+    padding: 18px 26px;
+  }
+
+  .logo-chip img {
+    height: 48px;
+    max-width: 190px;
+  }
+
+  .logo-chip-badge img {
+    height: 104px;
+    max-width: 104px;
+  }
+
+  .logo-chip-badge-wide img {
+    height: 62px;
+    max-width: 200px;
+  }
+}
+
 .border-big {
   border: 10px solid var(--background-alt-color)
 }
@@ -368,6 +445,26 @@ img {
   -webkit-text-stroke-color: var(--text-color);
   stroke: var(--text-color);
   color: var(--transparent-1-color);
+}
+
+.achievement-value {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  column-gap: 8px;
+  row-gap: 0;
+}
+
+.achievement-unit {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: .5px;
+  line-height: 1;
+  color: var(--text-color);
+  -webkit-text-stroke-width: 0;
+  stroke-width: 0;
+  white-space: nowrap;
 }
 
 .subtitle {
@@ -519,9 +616,10 @@ a:hover {
 
 .nav-pills .nav-link {
   padding: 5px 0;
-  font-size: 32px;
+  font-size: clamp(18px, 4vw, 32px);
   font-weight: 600;
   text-align: end;
+  white-space: nowrap;
 }
 
 .nav-pills .nav-link.active {
@@ -737,6 +835,72 @@ a:hover {
   filter: grayscale(0%);
 }
 
+.live-stat-card h3 {
+  font-size: 46px;
+  line-height: 1;
+}
+
+.live-stat-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+
+.live-dot {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #2ecc71;
+  flex-shrink: 0;
+}
+
+.live-dot::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #2ecc71;
+  transform: translate(-50%, -50%);
+  animation: live-pulse 1.8s ease-out infinite;
+}
+
+.live-stat-unit {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+@media (max-width: 767.98px) {
+  .live-stat-card h3 {
+    font-size: 34px;
+  }
+
+  .live-stat-unit {
+    font-size: 15px;
+  }
+}
+
+@keyframes live-pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: .7;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(3.2);
+    opacity: 0;
+  }
+}
+
 @keyframes kenburns {
   0% {
     transform: scale(1);
@@ -879,12 +1043,16 @@ a:hover {
   to { --bcta-ang: 360deg; }
 }
 
-/* Mobile/tablet-retrato (banner recortado): botão no canto inferior esquerdo,
-   sobre a moça — acompanhando o recorte da arte. */
+/* Mobile/tablet-retrato: o botão flutuando sobre a arte fica em cima da moça/texto
+   (recorte estreito do banner). Em vez de sobrepor o conteúdo do banner, o botão
+   passa a ficar centralizado, "por cima" da divisa entre o banner e a seção
+   seguinte (metade sobre a arte, metade sobre a próxima seção). O wrap ficou
+   fora do carousel (que tem overflow:hidden por causa do zoom Ken Burns), então
+   nada corta o botão quando ele avança sobre a seção abaixo. */
 @media (max-width: 767.98px) {
   #main-carousel .banner-cta-wrap {
-    left: 32%;
-    bottom: 9%;
+    left: 50%;
+    bottom: -20px;
   }
   #main-carousel .banner-cta {
     padding: 10px 20px;
@@ -1073,6 +1241,60 @@ a:hover {
 .service-wrap {
   transform: translateY(40px);
   transition: all 0.3s ease;
+}
+
+/* Mais Serviços - Carousel */
+.services-slide .service-box {
+  height: 500px;
+  margin: 0 10px;
+}
+
+.services-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid var(--divider-color);
+  background-color: var(--secondary-color);
+  color: var(--heading-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.services-arrow:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.services-prev {
+  left: 16px;
+}
+
+.services-next {
+  right: 16px;
+}
+
+@media (max-width: 767.98px) {
+  .services-arrow {
+    width: 38px;
+    height: 38px;
+    font-size: 16px;
+  }
+
+  .services-prev {
+    left: 8px;
+  }
+
+  .services-next {
+    right: 8px;
+  }
 }
 
 .testimonial-box {
@@ -1299,6 +1521,73 @@ a.icon-contact:hover {
   color: var(--heading-color);
 }
 
+.footer-contact-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.footer-contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.footer-contact-item .icon-contact {
+  margin-bottom: 10px;
+}
+
+.footer-contact-item p,
+.footer-contact-item h5 {
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+.footer-contact-item h5 {
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.icon-contact-sm {
+  width: 48px;
+  height: 48px;
+  font-size: 14px;
+}
+
+.footer-map-wrap {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.footer-map-wrap iframe {
+  display: block;
+}
+
+@media (max-width: 575.98px) {
+  .footer-contact-item h5 {
+    font-size: 14px;
+  }
+
+  .footer-contact-item p {
+    font-size: 12px !important;
+  }
+
+  .icon-contact-sm {
+    width: 42px;
+    height: 42px;
+    font-size: 12px;
+  }
+
+  .footer-map-wrap {
+    height: 180px;
+  }
+}
+
 .icon-quote {
   width: 70px;
   height: 70px;
@@ -1316,6 +1605,60 @@ a.icon-contact:hover {
 
 .footer-terms {
   transition: .3s;
+}
+
+/* Barra final do footer (copyright / logo / termos): em telas estreitas
+   empilha centralizado em ordem fixa; a partir do breakpoint md vira uma
+   grade de 3 colunas (1fr auto 1fr) para o logo ficar sempre no centro
+   exato da barra, independente da largura do texto dos dois lados. */
+.footer-bottom-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  text-align: center;
+}
+
+.footer-bottom-bar > * {
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+@media (min-width: 768px) {
+  .footer-bottom-bar {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    text-align: left;
+  }
+
+  .footer-bottom-copyright {
+    justify-self: start;
+  }
+
+  .footer-bottom-logo {
+    justify-self: center;
+  }
+
+  .footer-bottom-bar .footer-terms {
+    justify-self: end;
+  }
+}
+
+/* No mobile, align-items-center centraliza cada <li> como bloco individual,
+   e como cada link tem um texto de largura diferente, o ícone de cada linha
+   fica numa posição x diferente (bloco mais largo = ícone mais à esquerda).
+   Aqui o <ul> vira um bloco do tamanho do maior item, centralizado na coluna,
+   com os itens alinhados à esquerda dentro dele — ícones ficam todos na
+   mesma coluna. */
+@media (max-width: 767.98px) {
+  .footer-menu-list {
+    align-items: flex-start !important;
+    width: fit-content;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
 }
 
 .footer-terms a:hover {
@@ -1536,6 +1879,10 @@ a.icon-contact:hover {
 
   .heading-2 {
     font-size: 46px;
+  }
+
+  .achievement-unit {
+    font-size: 18px;
   }
 
   .top-header .icon-social {

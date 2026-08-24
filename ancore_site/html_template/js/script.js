@@ -58,6 +58,32 @@ $(document).ready(function () {
     }]
   });
 
+  // Mais Serviços
+  $('.services-slide').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3500,
+    dots: true,
+    arrows: true,
+    prevArrow: $('.services-prev'),
+    nextArrow: $('.services-next'),
+    pauseOnHover: true,
+    responsive: [{
+      breakpoint: 1199,
+      settings: {
+        slidesToShow: 2
+      }
+    }, {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
+        centerMode: true,
+        centerPadding: '30px'
+      }
+    }]
+  });
+
   // Testimonial
 
   $('.testimonial-slide').slick({

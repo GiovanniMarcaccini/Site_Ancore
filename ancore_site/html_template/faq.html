@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <!--
 
   ╔═════════════════════════════════════════════════════╗
@@ -73,7 +73,7 @@
         aria-label="Offcanvas navbar large">
         <div class="container-fluid">
           <div class="logo-box">
-            <a class="navbar-brand" href="index.html"><img src="images/ancore/logo-menu.svg" alt="Main Logo"
+            <a class="navbar-brand" href="index.html"><img src="images/ancore/logo-menu_branca.svg" alt="Main Logo"
                 class="img-fluid"></a>
           </div>
           <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
@@ -84,7 +84,7 @@
             aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header" id="offcanvasNavbarLabel">
               <div class="logo-box">
-                <a class="navbar-brand" href="index.html"><img src="images/ancore/logo-menu.svg" alt="Drawer Logo"
+                <a class="navbar-brand" href="index.html"><img src="images/ancore/logo-menu_branca.svg" alt="Drawer Logo"
                     class="img-fluid"></a>
               </div>
               <button type="button" class="btn-close bg-accent-color-2 p-3" data-bs-dismiss="offcanvas"
@@ -101,8 +101,15 @@
                 <li class="nav-item">
                   <a class="nav-link" href="our-team.html">Sobre nós</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="services.html">Proteção Ancore</a>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle d-flex align-items-center gap-1" href="services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Proteção Ancore
+                    <i class="bi bi-chevron-down"></i>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="services.html">Assistência e Benefícios</a></li>
+                    <li><a class="dropdown-item" href="regulamentos.html">Regulamentos</a></li>
+                  </ul>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="blog.html">Blog</a>
@@ -388,7 +395,7 @@
 
           <div class="col-12 col-md-6 col-xl-3 mt-0 px-auto px-xl-0">
             <div class="footer-logo-box">
-              <img src="images/ancore/logo-menu.svg" alt="Footer Logo" class="h-100 object-fit-contain d-block">
+              <img src="images/ancore/logo-menu_branca.svg" alt="Footer Logo" class="h-100 object-fit-contain d-block">
             </div>
             <p class="mt-4 text-center text-md-start">Copyright © 2026 ANCORE - ASSOCIACAO NACIONAL DE COOPERACAO RECIPROCA - 23.345.936/0001-50. <br> Todos os direitos reservados. <br> Versão 2026.3</p>
             <div class="d-flex gap-2 justify-content-center justify-content-md-start">
@@ -453,29 +460,29 @@
             <div class="w-100">
               <hr class="border-1 max-w-170 text-primary-color opacity-100 mx-auto mx-md-0">
             </div>
-            <ul class="p-0 m-0 d-flex flex-column align-items-center align-items-md-start">
+            <ul class="p-0 m-0 d-flex flex-column align-items-center align-items-md-start footer-menu-list">
               <li class="d-flex align-items-center list-unstyled mb-2">
-                <a href="#"><i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
+                <a href="index.html"><i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
                   Início</a> 
               </li>
               <li class="d-flex align-items-center list-unstyled mb-2">
-                <a href="#"><i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
+                <a href="careers.html"><i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
                   Seja associado</a>
               </li>
               <li class="d-flex align-items-center list-unstyled mb-2">
-                <a href="#"><i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
+                <a href="our-team.html"><i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
                   Sobre Nós</a>
               </li>
               <li class="d-flex align-items-center list-unstyled mb-2">
-                <a href="#"><i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
+                <a href="services.html"><i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
                   Proteção Ancore</a>
               </li>
               <li class="d-flex align-items-center list-unstyled mb-2">
-                <a href="#"><i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
+                <a href="blog.html"><i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
                  Blog</a>
               </li>
               <li class="d-flex align-items-center list-unstyled mb-2">
-                <a href="#"><i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
+                <a href="appointment.html"><i class="bi bi-check-circle text-primary-color fs-5 me-2"></i>
                   Carreiras</a>
               </li>
             </ul>
@@ -484,27 +491,29 @@
           <div class="col-12 col-md-6 col-xl-4 mt-5 mt-xl-0 ps-0">
             <h4 class="text-center text-md-start">Já é Associado</h4>
             <hr class="border-1 max-w-170 text-primary-color opacity-100 mx-auto mx-md-0">
-            <div class="d-flex mb-4 flex-column flex-md-row align-items-center align-items-md-start">
-              <a href="#" class="icon-contact me-0 me-md-3"><i class="bi bi-telephone fs-3"></i></a>
-              <div class="d-flex flex-column text-center text-md-start">
+            <div class="footer-contact-row">
+              <div class="footer-contact-item">
+                <a href="#" class="icon-contact icon-contact-sm"><i class="bi bi-telephone fs-5"></i></a>
                 <p class="text-small text-color-3 mb-1">Fale Conosco</p>
                 <h5 class="mb-0">(62) 3293-6047</h5>
               </div>
-            </div>
-            <div class="d-flex mb-4 flex-column flex-md-row align-items-center align-items-md-start">
-              <a href="#" class="icon-contact me-0 me-md-3"><i class="bi bi-envelope fs-3"></i></a>
-              <div class="d-flex flex-column text-center text-md-start">
+              <div class="footer-contact-item">
+                <a href="#" class="icon-contact icon-contact-sm"><i class="bi bi-envelope fs-5"></i></a>
                 <p class="text-small text-color-3 mb-1">Assistência 24h</p>
                 <h5 class="mb-0">0800 086 2121</h5>
               </div>
-            </div>
-            <div class="d-flex flex-column flex-md-row align-items-center align-items-md-start">
-              <a href="#" class="icon-contact me-0 me-md-3"><i class="bi bi-geo-alt fs-3"></i></i></a>
-              <div class="d-flex flex-column text-center text-md-start">
+              <div class="footer-contact-item">
+                <a href="#footer-map" class="icon-contact icon-contact-sm"><i class="bi bi-geo-alt fs-5"></i></a>
                 <p class="text-small text-color-3 mb-1">Onde nos encontrar</p>
-                <h5 class="mb-0">Av. Portugal, 591 - St. Oeste, Goiânia - GO, 74140-020</h5>
               </div>
             </div>
+            <div class="footer-map-wrap rounded-4" id="footer-map">
+              <iframe
+                src="https://www.google.com/maps?q=Av.%20Portugal%2C%20591%20-%20Setor%20Oeste%2C%20Goi%C3%A2nia%20-%20GO%2C%2074140-020&output=embed"
+                width="100%" height="100%" style="border:0" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" title="Localização da Ancore no mapa"></iframe>
+            </div>
+            <p class="text-small text-color-3 text-center mt-3 mb-0">Av. Portugal, 591 - St. Oeste, Goiânia - GO, 74140-020</p>
           </div>
         </div>
       </div>
@@ -514,7 +523,7 @@
           <i class="bi bi-car-front-fill fs-4 me-3 text-primary-color"></i>
           <span class="subtitle">Certificações</span>
         </div>
-        <div class="bg-white rounded-4 p-4 d-flex flex-wrap align-items-center justify-content-center gap-4 gap-md-5">
+        <div class="rounded-4 p-4 d-flex flex-wrap align-items-center justify-content-center gap-4 gap-md-5">
           <img src="images/ancore/cert/iso9001.webp" alt="ISO 9001" style="height:90px;width:auto;object-fit:contain;">
           <img src="images/ancore/cert/selo-300x233.webp" alt="Selo Ancore" style="height:90px;width:auto;object-fit:contain;">
           <img src="images/ancore/cert/Selo-Jornada-Flexivel-2023-Preto-300x300.webp" alt="Selo Jornada Flexível 2023" style="height:90px;width:auto;object-fit:contain;">
@@ -524,8 +533,8 @@
       </div>
       <div class="border-top-color">
         <div class="b-container border-start border-end border-1 border-primary-color p-3">
-          <div class="d-flex flex-row flex-wrap justify-content-center justify-content-md-between">
-            <p class="text-color-3 m-0">Copyright © 2026 ANCORE - Prod.marcaccini</p>
+          <div class="footer-bottom-bar">
+            <p class="footer-bottom-copyright text-color-3 m-0">Copyright © 2026 ANCORE - Prod.marcaccini</p>
             <ul class="m-0 p-0 d-flex gap-3 footer-terms">
               <li class="list-unstyled"><a href="#"
                   class="text-color-3 border-end border-1 border-primary-color pe-3">Termos & Condições</a></li>
