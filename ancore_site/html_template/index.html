@@ -26,6 +26,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ancore</title>
   <link rel="icon" href="images/ancore/logo-simbolo.png" type="image/png">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="image" href="images/ancore/banner/banner_index.webp" fetchpriority="high">
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
   <!-- Animation On Scroll (AOS) -->
   <link rel="stylesheet" href="css/vendor/aos.css">
   <!-- Bootstrap Icons CSS -->
@@ -33,7 +41,8 @@
   <!-- Slick CSS -->
   <link rel="stylesheet" href="css/vendor/slick.css">
   <!-- FANCYBOX CSS  -->
-  <link rel="stylesheet" href="css/vendor/fancybox.css">
+  <link rel="stylesheet" href="css/vendor/fancybox.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="css/vendor/fancybox.css"></noscript>
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css">
 
@@ -175,7 +184,7 @@
 
 
               <div class="carousel-item active">
-                <img src="images/ancore/banner/banner_index.png" class="d-block w-100" alt="Slide 1">
+                <img src="images/ancore/banner/banner_index.webp" class="d-block w-100" alt="Slide 1" width="2172" height="724" fetchpriority="high">
               </div>
 
               <!-- <div class="carousel-item">
@@ -228,7 +237,7 @@
               <div class="why-box-inner" data-aos="fade-right" data-aos-delay="600" data-aos-duration="0">
                 <i class="bi bi-rocket-takeoff why-icon text-primary-color mb-3"></i>
                 <h4>Sem burocracia</h4>
-                <p>Processos simples, atendimento ágil e soluções sem complicação.</p>
+                <p>Processos simples, atendimento ágil e soluções sem complicação. <br> <br></p>
                 <!-- <a href="#" class="links-primary text-primary-color">Read More<i
                     class="bi bi-arrow-right-circle ms-3"></i></a> -->
               </div>
@@ -307,7 +316,7 @@
                 aria-labelledby="pills-detailing-tab">
                 <div class="service-box">
                   <div class="bg-overlay-2"></div>
-                  <img src="images/ancore/assist_24h.png" alt="detailed-car-cleaning" class="w-100 h-100 rounded-4">
+                  <img src="images/ancore/assist_24h.webp" alt="detailed-car-cleaning" class="w-100 h-100 rounded-4" width="675" height="450" loading="lazy">
                   <div class="service-content">
                     <div class="service-info">
                       <div class="service-wrap">
@@ -327,7 +336,7 @@
                 <div class="service-box">
                   <div class="bg-overlay-2"></div>
                   <img src="images/ancore/clugas.png" alt="car-service-workers-disassembling-car-interior"
-                    class="w-100 h-100 rounded-4">
+                    class="w-100 h-100 rounded-4" width="980" height="835" loading="lazy">
                   <div class="service-content">
                     <div class="service-info">
                       <div class="service-wrap">
@@ -347,7 +356,7 @@
               <div class="tab-pane fade" id="pills-coating" role="tabpanel" aria-labelledby="pills-coating-tab">
                 <div class="service-box">
                   <div class="bg-overlay-2"></div>
-                  <img src="images/ancore/Carro_reserva.png" alt="car-detailing-concept" class="w-100 h-100 rounded-4">
+                  <img src="images/ancore/Carro_reserva.webp" alt="car-detailing-concept" class="w-100 h-100 rounded-4" width="554" height="554" loading="lazy">
                   <div class="service-content">
                     <div class="service-info">
                       <div class="service-wrap">
@@ -368,8 +377,8 @@
               <div class="tab-pane fade" id="pills-fleet" role="tabpanel" aria-labelledby="pills-fleet-tab">
                 <div class="service-box">
                   <div class="bg-overlay-2"></div>
-                  <img src="images/ancore/app.png" alt="female-mechanic-delivering-car-keys-to-customer"
-                    class="w-100 h-100 rounded-4">
+                  <img src="images/ancore/app.webp" alt="female-mechanic-delivering-car-keys-to-customer"
+                    class="w-100 h-100 rounded-4" width="1123" height="775" loading="lazy">
                   <div class="service-content">
                     <div class="service-info">
                       <div class="service-wrap">
@@ -438,13 +447,13 @@
                   </div>
                   <h5 class="m-0 text-center">Atendimentos realizados</h5>
                 </div>
-                <img src="images/ancore/protection.png" alt="worker-disassembling-car-interior"
-                  class="w-100 rounded-4 mb-4 mb-xl-0" height="300px" data-aos="fade-up" data-aos-delay="900"
+                <img src="images/ancore/protection.webp" alt="worker-disassembling-car-interior"
+                  class="w-100 rounded-4 mb-4 mb-xl-0" width="1024" height="683" loading="lazy" data-aos="fade-up" data-aos-delay="900"
                   data-aos-duration="1000">
               </div>
               <div class="col-12 col-xl-6">
                 <img src="images/ancore/macanico_ancore.webp" alt="auto-mechanic-portrait"
-                  class="w-100 rounded-4 mb-5 mb-xl-0" height="550px" data-aos="fade-down" data-aos-delay="300"
+                  class="w-100 rounded-4 mb-5 mb-xl-0" width="1500" height="1000" loading="lazy" data-aos="fade-down" data-aos-delay="300"
                   data-aos-duration="1000">
               </div>
             </div>
@@ -528,12 +537,9 @@
               <div class="col-12 col-md-6 col-xl-7 ps-xl-4">
                 <div class="w-100 h-100 position-relative" data-aos="fade-down" data-aos-delay="300"
                   data-aos-duration="1000">
-                  <video class="w-100 h-100 object-fit-cover rounded-4" autoplay muted loop>
-                    <source
-                      src="images/ancore/videos/compactados/Ancore_2026_comp.mp4"
-                      type="video/mp4">
-                    Seu navegador não suporta a tag de vídeo.
-                  </video>
+                  <img src="images/ancore/videos/compactados/Ancore_2026_comp_poster.jpg"
+                    alt="Vídeo institucional Ancore" class="w-100 h-100 object-fit-cover rounded-4" loading="lazy"
+                    width="1280" height="720">
                   <div class="bg-overlay"></div>
                   <div class="position-absolute top-50 start-50 translate-middle">
                     <a href="images/ancore/videos/compactados/Ancore_2026_comp.mp4"
@@ -635,19 +641,20 @@
     <section class="section full pt-0">
       <div class="d-flex align-items-center justify-content-center mb-4">
         <i class="bi bi-car-front-fill fs-4 me-3 text-primary-color"></i>
-        <span class="subtitle">Parceiros</span>
+        <span class="subtitle">Associado Ancore tem acesso ao Clube de Vantagens</span>
+        <p>clubcerto</p>
       </div>
       <div class="p-4 p-md-5 bg-accent-color-2" data-aos="fade-up" data-aos-delay="900" data-aos-duration="1000">
         <div class="logo-grid">
-          <span class="logo-chip"><img src="images/ancore/parceiros/casas_bahia.webp" alt="Casas Bahia"></span>
-          <span class="logo-chip"><img src="images/ancore/parceiros/cinemark.webp" alt="Cinemark"></span>
-          <span class="logo-chip"><img src="images/ancore/parceiros/magalu.webp" alt="Magalu"></span>
-          <span class="logo-chip"><img src="images/ancore/parceiros/netshoes.webp" alt="Netshoes"></span>
-          <span class="logo-chip"><img src="images/ancore/parceiros/petz.webp" alt="Petz"></span>
-          <span class="logo-chip"><img src="images/ancore/parceiros/rchlo.webp" alt="RCHLO"></span>
-          <span class="logo-chip"><img src="images/ancore/parceiros/renner.webp" alt="Renner"></span>
-          <span class="logo-chip"><img src="images/ancore/parceiros/Rio_quente.webp" alt="Rio Quente"></span>
-          <span class="logo-chip"><img src="images/ancore/parceiros/tokstok.webp" alt="Tok&Stok"></span>
+          <span class="logo-chip"><img src="images/ancore/parceiros/casas_bahia.webp" alt="Casas Bahia" width="300" height="225" loading="lazy"></span>
+          <span class="logo-chip"><img src="images/ancore/parceiros/cinemark.webp" alt="Cinemark" width="300" height="225" loading="lazy"></span>
+          <span class="logo-chip"><img src="images/ancore/parceiros/magalu.webp" alt="Magalu" width="300" height="225" loading="lazy"></span>
+          <span class="logo-chip"><img src="images/ancore/parceiros/netshoes.webp" alt="Netshoes" width="300" height="225" loading="lazy"></span>
+          <span class="logo-chip"><img src="images/ancore/parceiros/petz.webp" alt="Petz" width="300" height="225" loading="lazy"></span>
+          <span class="logo-chip"><img src="images/ancore/parceiros/rchlo.webp" alt="RCHLO" width="300" height="225" loading="lazy"></span>
+          <span class="logo-chip"><img src="images/ancore/parceiros/renner.webp" alt="Renner" width="300" height="225" loading="lazy"></span>
+          <span class="logo-chip"><img src="images/ancore/parceiros/Rio_quente.webp" alt="Rio Quente" width="300" height="225" loading="lazy"></span>
+          <span class="logo-chip"><img src="images/ancore/parceiros/tokstok.webp" alt="Tok&Stok" width="300" height="225" loading="lazy"></span>
         </div>
       </div>
     </section>
@@ -672,7 +679,7 @@
           <div class="service-box">
             <div class="bg-overlay-2"></div>
             <img src="images/ancore/servicos/troca_vidro_farol.webp" alt="workman-in-hazmat-suit-cleaning"
-              class="w-100 h-100">
+              class="w-100 h-100" width="480" height="336" loading="lazy">
             <div class="service-content">
               <div class="service-info">
                 <div class="service-wrap">
@@ -686,7 +693,7 @@
           </div>
           <div class="service-box">
             <div class="bg-overlay-2"></div>
-            <img src="images/ancore/servicos/chaveiro.jpg" alt="workman-in-hazmat-suit-cleaning" class="w-100 h-100">
+            <img src="images/ancore/servicos/chaveiro.jpg" alt="workman-in-hazmat-suit-cleaning" class="w-100 h-100" width="293" height="281" loading="lazy">
             <div class="service-content">
               <div class="service-info">
                 <div class="service-wrap">
@@ -701,7 +708,7 @@
           <div class="service-box">
             <div class="bg-overlay-2"></div>
             <img src="images/ancore/servicos/socorro_eletrico.webp" alt="workman-in-hazmat-suit-cleaning"
-              class="w-100 h-100">
+              class="w-100 h-100" width="800" height="533" loading="lazy">
             <div class="service-content">
               <div class="service-info">
                 <div class="service-wrap">
@@ -716,7 +723,7 @@
           <div class="service-box">
             <div class="bg-overlay-2"></div>
             <img src="images/ancore/servicos/troca_de_pneu.webp" alt="workman-in-hazmat-suit-cleaning"
-              class="w-100 h-100">
+              class="w-100 h-100" width="1080" height="608" loading="lazy">
             <div class="service-content">
               <div class="service-info">
                 <div class="service-wrap">
@@ -730,7 +737,7 @@
           </div>
           <div class="service-box">
             <div class="bg-overlay-2"></div>
-            <img src="images/ancore/servicos/taxi.png" alt="workman-in-hazmat-suit-cleaning" class="w-100 h-100">
+            <img src="images/ancore/servicos/taxi.png" alt="workman-in-hazmat-suit-cleaning" class="w-100 h-100" width="679" height="452" loading="lazy">
             <div class="service-content">
               <div class="service-info">
                 <div class="service-wrap">
@@ -744,7 +751,7 @@
           </div>
           <div class="service-box">
             <div class="bg-overlay-2"></div>
-            <img src="images/ancore/servicos/retorno.webp" alt="workman-in-hazmat-suit-cleaning" class="w-100 h-100">
+            <img src="images/ancore/servicos/retorno.webp" alt="workman-in-hazmat-suit-cleaning" class="w-100 h-100" width="1024" height="756" loading="lazy">
             <div class="service-content">
               <div class="service-info">
                 <div class="service-wrap">
@@ -758,7 +765,7 @@
           </div>
           <div class="service-box">
             <div class="bg-overlay-2"></div>
-            <img src="images/ancore/servicos/hospedagem.webp" alt="workman-in-hazmat-suit-cleaning" class="w-100 h-100">
+            <img src="images/ancore/servicos/hospedagem.webp" alt="workman-in-hazmat-suit-cleaning" class="w-100 h-100" width="800" height="600" loading="lazy">
             <div class="service-content">
               <div class="service-info">
                 <div class="service-wrap">
@@ -772,7 +779,7 @@
           </div>
           <div class="service-box">
             <div class="bg-overlay-2"></div>
-            <img src="images/ancore/servicos/funeral.webp" alt="workman-in-hazmat-suit-cleaning" class="w-100 h-100">
+            <img src="images/ancore/servicos/funeral.webp" alt="workman-in-hazmat-suit-cleaning" class="w-100 h-100" width="1080" height="720" loading="lazy">
             <div class="service-content">
               <div class="service-info">
                 <div class="service-wrap">
@@ -801,11 +808,11 @@
         <div class="p-4 p-md-5 border-general rounded-4 bg-accent-color-2" data-aos="fade-up"
           data-aos-delay="900" data-aos-duration="1000">
           <div class="logo-grid">
-            <span class="logo-chip logo-chip-badge"><img src="images/ancore/cert/iso9001.webp" alt="ISO 9001"></span>
-            <span class="logo-chip logo-chip-badge"><img src="images/ancore/cert/selo-300x233.webp" alt="Great Place To Work - Certificada"></span>
-            <span class="logo-chip logo-chip-badge"><img src="images/ancore/cert/Selo-Jornada-Flexivel-2023-Preto-300x300.webp" alt="Melhores Empresas Para Trabalhar - Jornada Flexível"></span>
-            <span class="logo-chip logo-chip-badge logo-chip-badge-wide"><img src="images/ancore/cert/Selo-Melhores-Nacional-Pequenas-Empresas-Horizontal-2023-300x97.webp" alt="Melhores Empresas Para Trabalhar - Pequenas Empresas"></span>
-            <span class="logo-chip logo-chip-badge"><img src="images/ancore/cert/Selo-Ranking-Centro-Oeste-2024-300x300.webp" alt="Ranking Centro-Oeste 2024"></span>
+            <span class="logo-chip logo-chip-badge"><img src="images/ancore/cert/iso9001.webp" alt="ISO 9001" width="103" height="82" loading="lazy"></span>
+            <span class="logo-chip logo-chip-badge"><img src="images/ancore/cert/selo-300x233.webp" alt="Great Place To Work - Certificada" width="300" height="233" loading="lazy"></span>
+            <span class="logo-chip logo-chip-badge"><img src="images/ancore/cert/Selo-Jornada-Flexivel-2023-Preto-300x300.webp" alt="Melhores Empresas Para Trabalhar - Jornada Flexível" width="300" height="300" loading="lazy"></span>
+            <span class="logo-chip logo-chip-badge logo-chip-badge-wide"><img src="images/ancore/cert/Selo-Melhores-Nacional-Pequenas-Empresas-Horizontal-2023-300x97.webp" alt="Melhores Empresas Para Trabalhar - Pequenas Empresas" width="300" height="97" loading="lazy"></span>
+            <span class="logo-chip logo-chip-badge"><img src="images/ancore/cert/Selo-Ranking-Centro-Oeste-2024-300x300.webp" alt="Ranking Centro-Oeste 2024" width="300" height="300" loading="lazy"></span>
           </div>
         </div>
       </div>
@@ -1088,8 +1095,8 @@
       <div class="b-container">
         <div class="row d-flex align-items-center">
           <div class="col-12 col-xl-6 pe-xl-4" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
-            <img src="images/ancore/img1.jpg" alt="worker-cleaning-modern-vehicle-alloy-wheels"
-              class="w-100 rounded-4 mb-5 mb-xl-0" height="700px">
+            <img src="images/ancore/img1.webp" alt="worker-cleaning-modern-vehicle-alloy-wheels"
+              class="w-100 rounded-4 mb-5 mb-xl-0" width="1080" height="1350" loading="lazy">
           </div>
           <div class="col-12 col-xl-6 ps-xl-4" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
             <div class="d-flex align-items-center">
@@ -1391,7 +1398,7 @@
               <span class="text-small category-blog">Segurança Veicular</span>
               <a href="single-post-pneus.html">
                 <img src="images/ancore/Blog/post1.webp" alt="worker-cleaning-automobile-air-conditioner-vent-gr"
-                  class="w-100 rounded-top-4">
+                  class="w-100 rounded-top-4" width="1194" height="488" loading="lazy">
               </a>
               <div class="blog-content">
                 <ul class="d-flex align-items-center m-0 p-0">
@@ -1418,7 +1425,7 @@
             <div class="card blog position-relative">
               <span class="text-small category-blog">Proteção Veicular</span>
               <a href="single-post-protecao.html">
-                <img src="images/ancore/Blog/post2.webp" class="w-100 rounded-top-4">
+                <img src="images/ancore/Blog/post2.webp" class="w-100 rounded-top-4" width="1198" height="488" loading="lazy">
               </a>
               <div class="blog-content">
                 <ul class="d-flex align-items-center m-0 p-0">
@@ -1447,7 +1454,7 @@
               <span class="text-small category-blog">Economia Automotiva</span>
               <a href="single-post-icms.html">
                 <img src="images/ancore/Blog/post3.webp" alt="worker-cleaning-automobile-air-conditioner-vent-gr"
-                  class="w-100 rounded-top-4">
+                  class="w-100 rounded-top-4" width="1198" height="488" loading="lazy">
               </a>
               <div class="blog-content">
                 <ul class="d-flex align-items-center m-0 p-0">
@@ -1604,19 +1611,19 @@
             <!-- Certificações Footer -->
       <div class="b-container pb-5">
         <div class="rounded-4 p-4 d-flex flex-wrap align-items-center justify-content-center gap-4 gap-md-5">
-          <img src="images/Logos ARX/arx-23 (1) 4.svg" alt="ARX Assistência" style="height:90px;width:auto;object-fit:contain;">
-          <img src="images/ancore/cert/iso9001.webp" alt="ISO 9001" style="height:90px;width:auto;object-fit:contain;">
-          <img src="images/ancore/cert/selo-300x233.webp" alt="Selo Ancore" style="height:90px;width:auto;object-fit:contain;">
-          <img src="images/ancore/cert/Selo-Jornada-Flexivel-2023-Preto-300x300.webp" alt="Selo Jornada Flexível 2023" style="height:90px;width:auto;object-fit:contain;">
-          <img src="images/ancore/cert/Selo-Melhores-Nacional-Pequenas-Empresas-Horizontal-2023-300x97.webp" alt="Selo Melhores Empresas 2023" style="height:60px;width:auto;object-fit:contain;">
-          <img src="images/ancore/cert/Selo-Ranking-Centro-Oeste-2024-300x300.webp" alt="Selo Ranking Centro-Oeste 2024" style="height:90px;width:auto;object-fit:contain;">
+          <img src="images/Logos ARX/arx-logo.webp" alt="ARX Assistência" width="560" height="369" loading="lazy" style="height:90px;width:auto;object-fit:contain;">
+          <img src="images/ancore/cert/iso9001.webp" alt="ISO 9001" width="103" height="82" loading="lazy" style="height:90px;width:auto;object-fit:contain;">
+          <img src="images/ancore/cert/selo-300x233.webp" alt="Selo Ancore" width="300" height="233" loading="lazy" style="height:90px;width:auto;object-fit:contain;">
+          <img src="images/ancore/cert/Selo-Jornada-Flexivel-2023-Preto-300x300.webp" alt="Selo Jornada Flexível 2023" width="300" height="300" loading="lazy" style="height:90px;width:auto;object-fit:contain;">
+          <img src="images/ancore/cert/Selo-Melhores-Nacional-Pequenas-Empresas-Horizontal-2023-300x97.webp" alt="Selo Melhores Empresas 2023" width="300" height="97" loading="lazy" style="height:60px;width:auto;object-fit:contain;">
+          <img src="images/ancore/cert/Selo-Ranking-Centro-Oeste-2024-300x300.webp" alt="Selo Ranking Centro-Oeste 2024" width="300" height="300" loading="lazy" style="height:90px;width:auto;object-fit:contain;">
         </div>
       </div>
       <div class="border-top-color">
         <div class="b-container border-start border-end border-1 border-primary-color p-3">
           <div class="footer-bottom-bar">
             <p class="footer-bottom-copyright text-color-3 m-0">Copyright © 2026 ANCORE - Prod.marcaccini</p>
-            <img class="footer-bottom-logo" src="images/Logos ARX/gio_v2.png" alt="Quem fez o site" style="height:55px;width:auto;object-fit:contain;">
+            <img class="footer-bottom-logo" src="images/Logos ARX/gio_v2.png" alt="Quem fez o site" width="908" height="335" loading="lazy" style="height:55px;width:auto;object-fit:contain;">
 
             <ul class="m-0 p-0 d-flex gap-3 footer-terms">
               <li class="list-unstyled"><a href="#"
