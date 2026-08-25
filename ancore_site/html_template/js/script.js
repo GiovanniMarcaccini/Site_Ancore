@@ -110,11 +110,9 @@ $(document).ready(function () {
 
   // Fancy Box
   Fancybox.bind("[data-fancybox]", {
-    Carousel: {
-      Video: {
-        autoplay: true,
-      },
-    },
+    videoAutoplay: true,
+    videoTpl:
+      '<video class="fancybox__html5video" playsinline autoplay muted controls controlsList="nodownload" poster="{{poster}}">\n  <source src="{{src}}" type="{{format}}" />Seu navegador não suporta vídeos incorporados.</video>',
   });
 
   // Ancore Proteção Veicular - Auto-rotating pills (carousel behavior)
