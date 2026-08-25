@@ -1139,9 +1139,11 @@ a:hover {
   overflow: hidden;
   border-top: 1px solid var(--divider-color);
   border-right: 1px solid var(--divider-color);
+  height: 100%;
 }
 
 .why-box .why-box-inner {
+  height: 100%;
   padding: 40px 30px;
   color: #fff;
   background-color: var(--secondary-color);
